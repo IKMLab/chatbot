@@ -1,0 +1,99 @@
+body {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #333;
+  font: 14px "Microsoft JhengHei", arial, sans-serif;
+}
+
+h3 {
+  display: block;
+  font-weight: normal;
+  position: absolute;
+  text-shadow : 0 0 2px #000;
+  left: 12px;
+  font-size : 16px;
+  color : #F9F7F6;
+}
+
+input[type='text']{
+	border: 1px solid #CED3D9;
+	padding: 0 0 0 15px;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:boder-box;
+  display:inline-block;
+  top:50%;
+  font: 18px "Microsoft JhengHei", arial, sans-serif;
+  height: 45px;
+  width: 98%;
+  position: relative;
+  transform:translateY(-50%);
+	border-radius: 3px;
+	color : #B0B0B0;
+}
+
+.container {
+  width: 600px;
+	margin: 10px auto;
+	position: relative;
+	border: 1px solid #CFCFCF;
+	overflow: hidden;
+	background-color: rgb(242, 242, 243);
+	border-radius: 2px 2px 7px 7px;
+}
+
+.chat-console{
+  background-color: rgb(242, 242, 243);
+  height: 510px;
+  padding: 10px 20px;
+  overflow: auto;
+}
+
+.bg-image {
+  width: 620px;
+  height: 200px;
+  background-size: cover;
+  background-image: url('../asset/bg.jpg');
+  position: relative;
+  border-bottom: 1px solid rgb(156, 152, 160);
+}
+
+.image{
+	width: 130px;
+	height: 130px;
+	position: absolute;
+	background: #F7F9F9;
+	border: 1px solid rgb(156, 152, 160);
+	top: 35px;
+	left: 235px;
+	border-radius: 50%;
+  box-shadow: 0px 0px 3px #222;
+}
+
+.image:before{
+	content: '';
+	position: absolute;
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	top: 5px;
+	left: 5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+	background-image: url('../asset/kmlab.png');
+}
+
+.input-div{
+  height: 60px;
+  padding: 20px 10px;
+  text-align: center;
+  background-color: rgb(252, 252, 252);
+  border-top: 1px solid #CFCFCF;
+}
+
+.chatlog {
+  font: 15px "Microsoft JhengHei", arial, sans-serif;
+}
+
+.align-right{
+  text-align:right;
+}
