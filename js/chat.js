@@ -26,6 +26,7 @@ function updateResponse(query){
 //this runs each time enter is pressed.
 function newEntry() {
   query = $('#chatbox').val();
+  $('#chatbox').val(''); // clean the input
   if (query !== "") {
     str = "<div class='message user-message'>";
     str += "<p>" + query +"</p>";

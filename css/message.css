@@ -6,6 +6,30 @@
 	position: relative ;
 }
 
+.demo-user > p{
+	border: 1px solid #10a310;
+	background-color: #20b320;
+	color: #EEE;
+}
+
+.demo-bot > p{
+	border: 1px solid #333 ;
+	background-color: rgb(20, 20, 20, 0.9) ;
+	color: #EEE ;
+}
+
+.demo-bot :before{
+   content:"";
+   position: absolute;
+   right: 100%;
+   top: 5px;
+   width: 0;
+   height: 0;
+   border-top: 5px solid transparent;
+   border-right: 6px solid #333;
+   border-bottom: 5px solid transparent;
+}
+
 .bot-message > p{
 	border: 1px solid #B9B9B9;
 	background-color: #FFF;
