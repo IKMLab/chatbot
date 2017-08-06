@@ -14,7 +14,7 @@
 
 .demo-bot > p{
 	border: 1px solid #333 ;
-	background-color: rgb(20, 20, 20, 0.9) ;
+	background-color: rgba(20, 20, 20, 0.9) ;
 	color: #EEE ;
 }
 
