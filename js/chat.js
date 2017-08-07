@@ -1,6 +1,6 @@
 function updateResponse(query){
 
-  url = "http://140.116.245.103:5000/api";
+  url = "http://140.116.245.100:9487/forward";
   query_data = {
     "query": query
   };
