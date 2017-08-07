@@ -2,7 +2,7 @@ body{
   padding-top: 15px;
   padding-bottom: 15px;
   background-size: cover;
-  background-image: url('../asset/full_bg.jpg');
+  background-image: url('http://i.imgur.com/XiCPyA0.jpg?1');
   font: 14px "Microsoft JhengHei", arial, sans-serif;
 }
 
@@ -116,7 +116,7 @@ input[type='text']{
   width: 620px;
   height: 160px;
   background-size: cover;
-  background-image: url('../asset/bg.jpg');
+  background-image: url('http://i.imgur.com/fyrdXgZ.jpg?1');
   position: relative;
   border-bottom: 1px solid rgb(156, 152, 160);
 }
