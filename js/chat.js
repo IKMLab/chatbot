@@ -1,6 +1,6 @@
 function updateResponse(query){
 
-  url = "http://140.116.245.100:9487/forward";
+  url = "https://ikmchatbot.com:9487/forward";
   query_data = {
     "query": query
   };
