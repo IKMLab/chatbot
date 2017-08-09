@@ -16,11 +16,17 @@ function updateResponse(query){
         str += "<p>" + result +"</p>";
         str += "</div>";
         $('#console').append(str);
+        autoScrollDown();
       },
       error: function(XMLHttpRequest, textStatus, errorThrown) {
         alert(XMLHttpRequest.readyState + XMLHttpRequest.status + XMLHttpRequest.responseText);
       }
   });
+}
+
+function autoScrollDown(){
+  console = $('#console');
+  console.scrollTop(console.height());
 }
 
 //this runs each time enter is pressed.
@@ -32,6 +38,7 @@ function newEntry() {
     str += "<p>" + query +"</p>";
     str += "</div>";
     $('#console').append(str);
+    autoScrollDown();
     updateResponse(query);
   }
 }
