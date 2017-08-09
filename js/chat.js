@@ -12,16 +12,20 @@ function updateResponse(query){
       data: query_data,
       dataType: 'text',
       success: function(result) {
-        str = "<div class='message bot-message'>";
-        str += "<p>" + result +"</p>";
-        str += "</div>";
-        $('#console').append(str);
+        appendNewMessage(result, "bot-message");
         autoScrollDown();
       },
       error: function(XMLHttpRequest, textStatus, errorThrown) {
-        alert(XMLHttpRequest.readyState + XMLHttpRequest.status + XMLHttpRequest.responseText);
+        console.log(XMLHttpRequest.status);
       }
   });
+}
+
+function appendNewMessage(msg, type){
+  str = "<div class='message " + type + "'>";
+  str += "<p>" + msg +"</p>";
+  str += "</div>";
+  $('#console').append(str);
 }
 
 function autoScrollDown(){
@@ -34,10 +38,7 @@ function newEntry() {
   query = $('#chatbox').val();
   $('#chatbox').val(''); // clean the input
   if (query !== "") {
-    str = "<div class='message user-message'>";
-    str += "<p>" + query +"</p>";
-    str += "</div>";
-    $('#console').append(str);
+    appendNewMessage(query, "user-message");
     autoScrollDown();
     updateResponse(query);
   }
