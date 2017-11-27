@@ -10,9 +10,12 @@ function updateResponse(query){
       type: 'get',
       url: url,
       data: query_data,
-      dataType: 'text',
+      dataType: 'json',
       success: function(result) {
-        appendNewMessage(result, "bot-message");
+        $('#has-sentiment-ratio').html(result["has_sentiment_prob"]);
+        $('#sentiment-ratio').html(result["subsentiment_prob"]);
+        $('#sentiment-term').html(result["subsentiment"]);
+        appendNewMessage(result["sentence"], "bot-message");
         autoScrollDown();
       },
       error: function(XMLHttpRequest, textStatus, errorThrown) {
@@ -29,8 +32,8 @@ function appendNewMessage(msg, type){
 }
 
 function autoScrollDown(){
-  console = $('#console');
-  console.scrollTop(console.height());
+  console_item = $('#console');
+  console_item.scrollTop(console_item.height());
 }
 
 //this runs each time enter is pressed.

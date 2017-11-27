@@ -16,6 +16,7 @@ h3{
   color : #F9F7F6;
 }
 
+
 input[type='text']{
 	border: 1px solid #CED3D9;
 	padding: 0 0 0 15px;
@@ -39,6 +40,10 @@ input[type='text']{
   justify-content:center;
 }
 
+.large-font{
+  font-size: 14px;
+}
+
 .demo-btn{
   background-color: #3A3A75;
   border: none;
@@ -49,6 +54,10 @@ input[type='text']{
   text-align: center;
   color: #EEE !important;
   text-decoration: none !important;
+}
+
+.result-head{
+  font-size: 14px:
 }
 
 
@@ -99,7 +108,7 @@ input[type='text']{
 .demo-console{
   background-color: rgba(33, 34, 33, 0.95);
   padding: 10px 20px;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   overflow: auto;
   border: 1px solid rgba(50, 50, 20, 0.95);
   border-radius: 5px;
